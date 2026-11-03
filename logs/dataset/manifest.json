@@ -1,0 +1,41 @@
+{
+  "version": 3,
+  "seed": 20261101,
+  "generated_at": "2026-10-30T15:54:51",
+  "fps": 30.0,
+  "noise_ratio": 0.05,
+  "counts": {
+    "standard": 500,
+    "hard_negative": 400,
+    "static_noise": 2
+  },
+  "bytes": {
+    "standard": 2920683,
+    "hard_negative": 5043026,
+    "static_noise": 655073
+  },
+  "labels": {
+    "positive": [
+      "G-02",
+      "G-10",
+      "G-11",
+      "G-12",
+      "G-13"
+    ],
+    "hard_negative": [
+      "figure_eight",
+      "half_circle",
+      "reciprocal",
+      "s_shape"
+    ],
+    "noise": [
+      "random_jitter",
+      "static_jitter"
+    ]
+  },
+  "spec": {
+    "standard": "G-02/G-10/G-11/G-12/G-13 各 100 组，噪声 = 单帧位移 5%",
+    "hard_negative": "八字形/S 形/往复摆动/半圆不足 330°，各 100 组",
+    "static_noise": "静止微抖 500 帧 + 强随机抖动 500 帧（保留手部结构）"
+  }
+}

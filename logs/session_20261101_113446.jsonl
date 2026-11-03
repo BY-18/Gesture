@@ -1,0 +1,2 @@
+{"ts": "2026-11-01T11:34:46.482", "ts_epoch": 1793504086.482574, "seq": 1, "event": "degrade", "degrade_level": 1, "reason": "test", "applied": {}}
+{"ts": "2026-11-01T11:34:46.482", "ts_epoch": 1793504086.482574, "seq": 2, "event": "degrade", "reason": "legacy-int-level"}

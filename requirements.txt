@@ -1,0 +1,21 @@
+# Gesture-Copilot 运行依赖
+# 环境裁定见 plan_gesture_copilot.md §8.1（决策点 D1）
+#
+# ⚠️ mediapipe 必须锁 0.10.21：
+#   - 0.10.30+ / 1.x 已移除 legacy API（mp.solutions.hands），只剩 mp.tasks
+#   - numpy 必须 < 2（0.10.21 的二进制轮子按 numpy 1.x ABI 构建）
+mediapipe==0.10.21
+numpy>=1.26,<2.0
+opencv-python>=4.8,<5.0
+
+# Web 服务
+fastapi>=0.110
+uvicorn[standard]>=0.29
+websockets>=12.0
+
+# 契约与配置
+pydantic>=2.7
+python-dotenv>=1.0
+
+# 编排（温路径，P2 / T12 起生效）
+langgraph>=0.2
